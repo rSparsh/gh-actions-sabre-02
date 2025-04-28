@@ -1,0 +1,13 @@
+name: Demo Workflow
+
+on: [workflow_dispatch]
+
+jobs:
+  demo:
+    name: Demo Workflow Job
+    runs-on: unbuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "Hello Sabre"
+
+      
